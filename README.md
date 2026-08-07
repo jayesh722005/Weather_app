@@ -1,16 +1,35 @@
-# React + Vite
+# 🌤 Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive **Weather Application** built with React.js that provides real-time weather information for any city. Users can search for a city and get current weather details like temperature, weather condition, location, and dynamic weather icons.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://weather-app-two-lime-78.vercel.app/
 
-## React Compiler
+## 📌 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Weather App is a React-based application that fetches live weather data from an API and displays it in a clean and user-friendly interface.
 
-## Expanding the Oxlint configuration
+The application allows users to search any city and view updated weather conditions with proper error handling for invalid locations.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Features
+
+- 🌍 Search weather by city name
+- 🌡️ Real-time temperature display
+- ☁️ Dynamic weather condition icons
+- 📍 Displays city and location information
+- 🔄 Live API data fetching
+- ⚠️ Error handling for invalid city searches
+- ⏳ Loading and empty state handling
+- 📱 Responsive design
+
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- Context API
+- CSS3
+- Weather API
+- Vite
+
+## 📂 Project Structure
