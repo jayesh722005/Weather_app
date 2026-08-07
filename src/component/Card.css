@@ -1,0 +1,110 @@
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 20px 45px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.card img {
+ 
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px auto;
+  display: block;
+  filter: drop-shadow(0 10px 20px rgba(59, 130, 246, 0.3));
+  animation: floatIcon 4s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+.card h2 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 15px 0 5px 0;
+  background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a1a1aa;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #71717a;
+  margin: 8px 0;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 12px;
+}
+
+.weather-box {
+  flex: 1;
+  padding: 18px 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.weather-box:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.weather-box h3 {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #71717a;
+  margin-bottom: 6px;
+}
+
+.weather-box p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
